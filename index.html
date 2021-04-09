@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jonathan Polina's Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <script src="https://kit.fontawesome.com/924680117b.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h3>JONATHAN POLINA</h3>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">What I Do</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I'm <strong>Jonathan</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">International Baccalaureate student & developer.</p>
+        </section>
+
+        <!-- Chevron -->
+        <a href="#about">
+            <div id= "chevron1"></div>
+            <div id= "chevron2"></div>
+        </a>
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">A grade 11 student based in Mississauga, Ontario.</p>
+            
+            <div class="about-me__body">
+                <p>I’m passionate about both programming and music, and I would like to pursue studying computer science in university.</p>
+                <p>I have experience in Java, Python, Javascript, HTML and CSS.</p>
+            </div>
+            
+            <img src="img/portrait.png" alt="Picture of me" class="about-me__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>My Studies</h3>
+                    <p>I am currently a grade 11 student, working on completing my International Baccalaureate Diploma program. I also study classical piano in the Royal Conservatory of Music Program.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Projects</h3>
+                    <p>I have several programming projects, including a music conference web application called Music Jam. This webapp was created for the GTA Hacks Hackathon in February 2021, and finished as the winner of the community theme. My other project is this website.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Music</h3>
+                    <p>Along with programming, I am  passionate about music. I enjoy recording music, having experience with playing the piano, violin, drums, guitar and bass.</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title">My work</h2>
+            <p class="section__subtitle">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="https://github.com/jpolina/MusicJam" target="_blank" class="portfolio__item">
+                    <img src="img/MusicJam0.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="https://devpost.com/software/musicjam" target="_blank" class="portfolio__item">
+                    <img src="img/MusicJam1.jpg" alt="" class="portfolio__img">
+                </a>
+                
+            </div>
+            <video width="320" height = "200" controls>
+                <source src="/vid/3_On_E.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class = "footer">
+            <a href="mailto:jonathanpolina4@gmail.com" class="footer__link">jonathanpolina4@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/jpolina">
+                    <i class="fab fa-github"></i>
+                </a></li>
+                <!--
+                <li class="social-list__item"><a class="social-list__link" href="http://dribbble.com">
+                    <i class="fab fa-dribbble"></i>
+                </a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://twitter.com">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">
+                    <i class="fab fa-codepen"></i>
+                </a></li>
+            -->
+            </ul>
+        </footer>
+        
+        <script src = "js/index.js"></script>
+    </body>
+</html>
