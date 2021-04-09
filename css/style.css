@@ -105,7 +105,8 @@ h3 { font-size: var(--fs-h3) }
 .section__title--intro {
     font-weight: var(--fw-reg);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 0px;
+    
 }
 
 .section__title--intro strong {
@@ -123,7 +124,6 @@ h3 { font-size: var(--fs-h3) }
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
-
 
 /* header */
 
@@ -261,29 +261,36 @@ header {
 }
 
 @media (min-height: 500px) {
-#chevron1{
-    width: 45px;
-    height: 8px;
-    margin-left:calc(50% - 32px);
-    margin-right:auto;
-    margin-top:-70px;
+    #chevron1{
+        width: 45px;
+        height: 8px;
+        margin-left:calc(50% - 32px);
+        margin-right:auto;
+        margin-top:-70px;
 
-    background: var(--clr-accent);
-    transform: rotate(45deg);
-    left: -5px;
+        background: var(--clr-accent);
+        transform: rotate(45deg);
+        left: -5px;
+    }
+
+
+    #chevron2{
+        width: 45px;
+        height: 8px;
+        margin-left:calc(50% - 6px);
+        margin-right:auto;
+        margin-top:-8px;
+        
+        background: var(--clr-accent);
+        transform: rotate(135deg);
+    }
 }
 
+@media (min-height: 700px) {
 
-#chevron2{
-    width: 45px;
-    height: 8px;
-    margin-left:calc(50% - 6px);
-    margin-right:auto;
-    margin-top:-8px;
-    
-    background: var(--clr-accent);
-    transform: rotate(135deg);
-}
+    .section__title--intro {
+        margin-top: 100px;
+    }
 }
 
 /* My services section */
