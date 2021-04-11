@@ -342,6 +342,14 @@ header {
 .about-me {
     max-width: 900px;
     margin: 0 auto;
+    
+}
+
+.about-me {
+    background-image: url(../img/Piano.jpg);
+    background-size: cover;
+    color: var(--clr-light);
+    text-align: center;
 }
 
 .about-me__img {
