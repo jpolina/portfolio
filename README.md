@@ -1,2 +1,2 @@
 # PortfolioWebsite
-This is the portfolio website of Jonathan Polina. This is where I will show my hobbies and accomplishments.
+This is the portfolio website of Jonathan Polina, displaying hobbies and accomplishments.
