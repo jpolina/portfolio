@@ -430,6 +430,9 @@ header {
     opacity: .9;
 }
 
+#portfolio__video{
+    size:inherit;
+}
 /* Footer */
 
 .footer {
