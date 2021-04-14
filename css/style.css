@@ -431,7 +431,11 @@ header {
 }
 
 #portfolio__video{
-    size:inherit;
+    margin-top:10px;
+    width:70vw;
+    height:calc(70vw * 0.565);
+    max-width:700px;
+    max-height:396px;
 }
 /* Footer */
 
