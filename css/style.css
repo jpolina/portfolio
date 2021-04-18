@@ -437,6 +437,17 @@ header {
     max-width:700px;
     max-height:396px;
 }
+
+#portfolio__video1{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    width:70vw;
+    height:calc(70vw * 0.79);
+    max-width:700px;
+    max-height:553px;
+}
 /* Footer */
 
 .footer {
