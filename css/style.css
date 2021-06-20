@@ -261,6 +261,12 @@ header {
     }
 }
 
+@media (max-width: 800px) {
+    #home {
+        height: calc(100vh - 52px);
+    }
+}
+
 @media (min-height: 500px) {
     #chevron1{
         position:absolute;
