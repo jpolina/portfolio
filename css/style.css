@@ -306,8 +306,9 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpg);
+    background-image: url(../img/output-onlinepngtools.png);
     background-size: cover;
+    background-position:center;
     color: var(--clr-light);
     text-align: center;
 }
