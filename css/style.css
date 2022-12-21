@@ -38,6 +38,7 @@
 
 html {
     scroll-behavior:smooth;
+    overflow-x: hidden;
 }
 body {
     background: var(--clr-dark);
@@ -60,8 +61,8 @@ img {
 strong { font-weight: var(--fw-bold) }
 
 :focus {
-    outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
+    /* outline: 3px solid var(--clr-accent); */
+    /* outline-offset: 3px; */
 }
 
 /* Buttons */
@@ -114,7 +115,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__subtitle {
-    margin: 0;
+    margin: 0 auto;
     font-size: var(--fs-h3);
 }
 
@@ -128,10 +129,29 @@ h3 { font-size: var(--fs-h3) }
 /* header */
 
 header {
+    position:fixed;
+    top:0;
+    left:0;
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    z-index: 1;
+    width:100%;
+    transition-duration:0.5s
 }
+
+@media (max-width: 600px) {
+
+    header {
+        background-color: rgba(0,0,0,.8);
+        top:1%;
+        left:2%;
+        width:96%;
+        border-radius: 10px;
+        transition-duration: 0.5s;
+    }
+}
+
 .logo {
 }
 
@@ -239,7 +259,7 @@ header {
     background-image: url("../img/hawaiiSunrise.jpg");
     background-size:auto;
     width: 100%;
-    height: calc(100vh - 60px);
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -261,64 +281,55 @@ header {
     }
 }
 
-@media (max-width: 800px) {
-    #home {
-        height: calc(100vh - 52px);
-    }
-}
-
-@media (min-height: 500px) {
-    #chevron1{
-        position:absolute;
-        width: 45px;
-        height: 8px;
-        margin-left:calc(50% - 28px);
-        margin-right:auto;
-        margin-top:-90px;
-
-        background: var(--clr-accent);
-        transform: rotate(45deg);
-        left: -5px;
-    }
-
-
-    #chevron2{
-        position:absolute;
-        width: 45px;
-        height: 8px;
-        margin-left:calc(50% - 6px);
-        margin-right:auto;
-        margin-top:-90px;
-        
-        background: var(--clr-accent);
-        transform: rotate(135deg);
-    }
-}
+.chevron {
+    white-space: nowrap;
+    font-size: 4rem;
+    position: absolute;
+    color: var(--clr-accent);
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    transform: translateY(0);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 750ms ease-in-out;
+    -ms-transition: all 750ms ease-in-out;
+    -o-transition: all 750ms ease-in-out;
+    transition: all 750ms ease-in-out;
+  }
+  
+  /* this sets the position of the arrow when it's up, so it will move up or down by 14px when you add or remove this class */
+  .lift {
+    transform: translateY(14px);
+  }
 
 @media (min-height: 700px) {
 
     .section__title--intro {
-        margin-top: 100px;
+        margin-top: 220px;
     }
 }
 
-/* My services section */
+/* About me section */
 
-.my-services {
+.about-me {
     background-color: var(--clr-dark);
-    background-image: url(../img/output-onlinepngtools.webp);
+    background-image: url(../img/Piano.jpg);
     background-size: cover;
+    background-repeat: none;
     background-position:center;
     color: var(--clr-light);
     text-align: center;
 }
 
-.section__title--services{
+.section__title--abouts{
     color: var(--clr-light);
     position: relative;
 }
 
-.section__title--services::after {
+.section__title--abouts::after {
     content: '';
     display: block;
     width: 2em;
@@ -328,81 +339,33 @@ header {
     opacity: 0.25;
 }
 
-.services {
+.abouts {
     margin-bottom: 4em;
 }
 
-.service {
-    max-width: 500px;
+.about {
+    width: 100%;
     margin: 0 auto;
 }
 
 @media (min-width: 800px) {
-    .services {
+    .abouts {
         display: flex;
-        max-width: 1000px;
+        max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
+        justify-content: center;
+        gap:2%;
     }
-    .service + .service {
+    .about + .about {
         margin-left: 2em;
-    }
-}
-
-.about-me {
-    max-width: 900px;
-    margin: 0 auto;
-    
-}
-
-.about-me {
-    background-image: url(../img/Piano.jpg);
-    background-size: cover;
-    color: var(--clr-light);
-    text-align: center;
-}
-
-.about-me__img {
-    box-shadow: var(--bs);
-    margin-top:50px;
-}
-
-@media (min-width: 600px){
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-    }
-
-    .section__title--about{
-        grid-area: title;
-    }
-
-    .section__subtitle--about{
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-    }
-
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
     }
 }
 
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-dark);
+    background-color: #252422;
     color: var(--clr-light);
     text-align: center;
 
