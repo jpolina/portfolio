@@ -33,7 +33,7 @@ let typewriter = new Typewriter(subtitle, {
 });
 
 typewriter
-    .typeString('I\'m studying CS @ The University of Waterloo!')
+    .typeString('I\'m studying CS @ the University of Waterloo!')
     .pauseFor(2500)
     .deleteAll()
     .typeString('I\'m a programmer!')
@@ -42,3 +42,5 @@ typewriter
     .typeString(' a musician!')
     .pauseFor(2500)
     .start();
+
+document.body.querySelector('.parallax-wrapper').addEventListener('scroll', AOS.init);

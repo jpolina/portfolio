@@ -22,138 +22,145 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <h3>JONATHAN POLINA</h3>
+                <div class="logo">
+                    <h3>JONATHAN POLINA</h3>
+                </div>
+                <button class="nav-toggle" aria-label="toggle navigate ion">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <div class="parallax-wrapper">
+            
+            
+            <!-- Introduction -->
+            <section class="intro" id="home">
+                <h1 class="section__title section__title--intro" data-aos="fade-up" data-aos-duration="1000">
+                    Hi, I'm <strong>Jonathan</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro"  data-aos="fade-up" data-aos-duration="1000"></p>
+                <!-- Chevron -->
+                <a href="#about">
+                    <i class="fa fa-chevron-down chevron"></i>
+                </a>
+                
+            </section>
+            <div class="parallax-header">
+                <img src="img/hawaiiSunrise.JPG" class="parallax-background">
+                <img src="img/mountains.PNG" class="parallax-foreground">
             </div>
-            <button class="nav-toggle" aria-label="toggle navigate ion">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            
+            
+            <!-- About me -->
+            <section class="about-me" id="about">
+                <h2 class="section__title section__title--abouts" data-aos="fade-up">About Me</h2>
+                <div class="abouts">
+
+                    <div class="about"data-aos="fade-up-right">
+                        <h3>Who I am</h3>
+                        <p>I'm a first year student in the University of Waterloo's Honours Computer Science program.
+                            I’m passionate about creating impactful projects and problem solving through code and algorithms, and I'd like to pursue a career in full-stack development.</p>
+                    </div>
+                    
+                    <div class="about" data-aos="fade-up">
+                        <h3>Skills</h3>
+                        <p>I have experience with front-end development, using React.js, Javascript, HTML/CSS, Next.js, and Redux.
+                            I also have experience with back-end development, using Node.js, Express.js, MongoDB, and AWS.
+                        </p>
+                    </div>
+                    
+                    <div class="about" data-aos="fade-up-left">
+                        <h3>Extracurriculars</h3>
+                        <p>In my free time, I enjoy recording music, playing the piano, violin, drums, guitar and bass. I also love to play sports like Ultimate Frisbee and try out new foods!</p>
+                    </div>
+                </div>
+                
+                <a href="#work" class="btn">My Work</a>
+            </section>
+            
+            <!-- My Work -->
+            <section class="my-work" id="work">
+                <h2 class="section__title" data-aos="fade-up">My work</h2>
+                <p class="section__subtitle">A selection of my range of work</p>
+                
+                <div class="portfolio">
+                    <!-- Portfolio item 01 -->
+                    <a href="https://devpost.com/software/musicjam" target="_blank" class="portfolio__item">
+                        <img src="img/MusicJam1.jpg" alt="" class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio item 02 -->
+                    <a href="https://devpost.com/software/piano-augmented" target="_blank" class="portfolio__item">
+                        <img src="img/Pianopic1.jpg" alt="" class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio item 03 -->
+                    <a href="https://github.com/jpolina/portfolio" target="_blank" class="portfolio__item">
+                        <img src="img/MyWebsite.png" alt="" class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio item 04 -->
+                    <a href="https://chrome.google.com/webstore/detail/lofidoro/pjgoihdbljhplcmojnnfokmacpoonnee?utm_source=chrome-ntp-icon" target="_blank" class="portfolio__item">
+                        <img src="img/pomodoro.png" alt="" class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio item 05 -->
+                    <a href="https://devpost.com/software/chordial-a-chord-generator" target="_blank" class="portfolio__item">
+                        <img src="img/chordial.png" alt="" class="portfolio__img">
+                    </a>
+                    
+                </div>
+                <!-- <iframe id = "portfolio__video" title="3 On E";
+                src="https://youtube.com/embed/mgb8kQ-F93I">
+                </iframe>
+
+                <iframe id = "portfolio__video1" 
+                src="https://www.youtube.com/embed/JYo09BbLN7I" 
+                title="Misty"
+                allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+
+                <iframe id = "portfolio__video2"
+                src="https://www.youtube.com/embed/NcwYsxabrR0" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe> -->
+            </section>
+            
+            
+            <!-- Footer -->
+            <footer class = "footer">
+                <a href="mailto:jonathanpolina4@gmail.com" class="footer__link">jonathanpolina4@gmail.com</a>
+                <ul class="social-list">
+                    <li class="social-list__item"><a class="social-list__link" href="https://github.com/jpolina">
+                        <i class="fab fa-github"></i>
+                    </a></li>
+                    
+                    <li class="social-list__item"><a class="social-list__link" href="https://devpost.com/jonathanpolina4?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">
+                        <img src="./img/devpost-logo.png" alt="devpost logo"
+                        style="
+                            transform:translateY(-26px);
+                            width:80px;">
+                            </img>
+                    </a></li>
+                    <!-- <li class="social-list__item"><a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a></li> -->
+            
                 </ul>
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro" data-aos="fade-up" data-aos-duration="1000">
-                Hi, I'm <strong>Jonathan</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro"  data-aos="fade-up" data-aos-duration="1000"></p>
-            <!-- Chevron -->
-            <a href="#about-me">
-                <i class="fa fa-chevron-down chevron"></i>
-            </a>
-        </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about-me">
-            <h2 class="section__title section__title--abouts" data-aos="fade-up">About Me</h2>
-            <div class="abouts">
-
-                <div class="about"data-aos="fade-up-right">
-                    <h3>Who I am</h3>
-                    <p>I'm a first year student in the University of Waterloo's Honours Computer Science program.
-                        I’m passionate about creating impactful projects and problem solving through code and algorithms, and I'd like to pursue a career in full-stack development.</p>
-                </div>
-                
-                <div class="about" data-aos="fade-up">
-                    <h3>Skills</h3>
-                    <p>I have experience with front-end development, using React.js, Javascript, HTML/CSS, Next.js, and Redux.
-                        I also have experience with back-end development, using Node.js, Express.js, MongoDB, and AWS.
-                    </p>
-                </div>
-                
-                <div class="about" data-aos="fade-up-left">
-                    <h3>Extracurriculars</h3>
-                    <p>In my free time, I enjoy recording music, playing the piano, violin, drums, guitar and bass. I also love to play sports like Ultimate Frisbee and try out new foods!</p>
-                </div>
-            </div>
+            </footer>
             
-            <a href="#work" class="btn">My Work</a>
-        </section>
-        
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title" data-aos="fade-up">My work</h2>
-            <p class="section__subtitle">A selection of my range of work</p>
-            
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="https://devpost.com/software/musicjam" target="_blank" class="portfolio__item">
-                    <img src="img/MusicJam1.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 02 -->
-                <a href="https://devpost.com/software/piano-augmented" target="_blank" class="portfolio__item">
-                    <img src="img/Pianopic1.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 03 -->
-                <a href="https://github.com/jpolina/portfolio" target="_blank" class="portfolio__item">
-                    <img src="img/MyWebsite.png" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 04 -->
-                <a href="https://chrome.google.com/webstore/detail/lofidoro/pjgoihdbljhplcmojnnfokmacpoonnee?utm_source=chrome-ntp-icon" target="_blank" class="portfolio__item">
-                    <img src="img/pomodoro.png" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 05 -->
-                <a href="https://devpost.com/software/chordial-a-chord-generator" target="_blank" class="portfolio__item">
-                    <img src="img/chordial.png" alt="" class="portfolio__img">
-                </a>
-                
-            </div>
-            <!-- <iframe id = "portfolio__video" title="3 On E";
-            src="https://youtube.com/embed/mgb8kQ-F93I">
-            </iframe>
-
-            <iframe id = "portfolio__video1" 
-            src="https://www.youtube.com/embed/JYo09BbLN7I" 
-            title="Misty"
-            allow="accelerometer; autoplay; clipboard-write; 
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-
-            <iframe id = "portfolio__video2"
-            src="https://www.youtube.com/embed/NcwYsxabrR0" 
-            title="YouTube video player" 
-            allow="accelerometer; autoplay; clipboard-write; 
-            encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe> -->
-        </section>
-        
-        
-        <!-- Footer -->
-        <footer class = "footer">
-            <a href="mailto:jonathanpolina4@gmail.com" class="footer__link">jonathanpolina4@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item"><a class="social-list__link" href="https://github.com/jpolina">
-                    <i class="fab fa-github"></i>
-                </a></li>
-                
-                <li class="social-list__item"><a class="social-list__link" href="https://devpost.com/jonathanpolina4?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">
-                    <img src="./img/devpost-logo.png" alt="devpost logo"
-                    style="
-                        transform:translateY(-26px);
-                        width:80px;">
-                        </img>
-                </a></li>
-                <!-- <li class="social-list__item"><a class="social-list__link" href="https://twitter.com">
-                    <i class="fab fa-twitter"></i>
-                </a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">
-                    <i class="fab fa-codepen"></i>
-                </a></li> -->
-           
-            </ul>
-        </footer>
-        
-        
+        </div> 
     </body>
 </html>
