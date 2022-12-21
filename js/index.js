@@ -1,4 +1,6 @@
 AOS.init()
+document.body.querySelector('.parallax-wrapper').addEventListener('scroll', AOS.init);
+
 
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
@@ -25,22 +27,23 @@ let chevronBounce = function() {
 
 setInterval(chevronBounce, 800);
 
-let subtitle = document.querySelector('.section__subtitle--intro');
+let subtitle = document.getElementById('subtitle');
 
 let typewriter = new Typewriter(subtitle, {
-    loop: true,
-    delay: 20
+    loop: false,
+    delay: 20,
 });
 
-typewriter
-    .typeString('I\'m studying CS @ the University of Waterloo!')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('I\'m a programmer!')
-    .pauseFor(2500)
-    .deleteChars(13)
-    .typeString(' a musician!')
-    .pauseFor(2500)
-    .start();
-
-document.body.querySelector('.parallax-wrapper').addEventListener('scroll', AOS.init);
+for(let i of Array.apply(null, {length: 100}).map(Number.call, Number)) {
+    typewriter
+        .typeString('I\'m a CS student @ UWaterloo!')
+        .pauseFor(2500)
+        .deleteChars(23)
+        .typeString('programmer!')
+        .pauseFor(2500)
+        .deleteChars(11)
+        .typeString('musician!')
+        .pauseFor(2500)
+        .deleteAll(50)
+        .start();
+}

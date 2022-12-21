@@ -32,7 +32,7 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                     </ul>
                 </nav>
             </header>
@@ -44,16 +44,16 @@
                 <h1 class="section__title section__title--intro" data-aos="fade-up" data-aos-duration="1000">
                     Hi, I'm <strong>Jonathan</strong>
                 </h1>
-                <p class="section__subtitle section__subtitle--intro"  data-aos="fade-up" data-aos-duration="1000"></p>
+                <p class="section__subtitle section__subtitle--intro"  data-aos="fade-up" data-aos-duration="1000" id="subtitle"></p>
                 <!-- Chevron -->
-                <a href="#about">
+                <a href="#about" onClick="document.getElementById('about').scrollIntoView();" >
                     <i class="fa fa-chevron-down chevron"></i>
                 </a>
                 
             </section>
             <div class="parallax-header">
-                <img src="img/hawaiiSunrise.jpg" class="parallax-background">
-                <img src="img/mountains.PNG" class="parallax-foreground">
+                <img src="img/hawaiiSunrise.jpg" class="parallax-background" alt="background">
+                <img src="img/mountains.PNG" class="parallax-foreground" alt="foreground">
             </div>
             
             
@@ -71,7 +71,7 @@
                     <div class="about" data-aos="fade-up">
                         <h3>Skills</h3>
                         <p>I have experience with front-end development, using React.js, Javascript, HTML/CSS, Next.js, and Redux.
-                            I also have experience with back-end development, using Node.js, Express.js, MongoDB, and AWS.
+                            I also have experience with back-end development, making REST APIs with Node.js, Express.js, MongoDB, and AWS.
                         </p>
                     </div>
                     
@@ -85,9 +85,9 @@
             </section>
             
             <!-- My Work -->
-            <section class="my-work" id="work">
-                <h2 class="section__title" data-aos="fade-up">My work</h2>
-                <p class="section__subtitle">A selection of my range of work</p>
+            <section class="my-projects" id="projects">
+                <h2 class="section__title" data-aos="fade-up">My Projects</h2>
+                <!-- <p class="section__subtitle">A selection of my range of work</p> -->
                 
                 <div class="portfolio">
                     <!-- Portfolio item 01 -->
