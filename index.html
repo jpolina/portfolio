@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
-        <script src="https://kit.fontawesome.com/924680117b.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/4384c3ba34.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="css/style.css">
@@ -32,7 +32,8 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -53,6 +54,8 @@
             </section>
             <div class="parallax-header">
                 <img src="img/hawaiiSunrise.jpg" class="parallax-background" alt="background">
+                <img src="img/clouds.png" class="parallax-midground" alt="midground">
+                
                 <img src="img/mountains.PNG" class="parallax-foreground" alt="foreground">
             </div>
             
@@ -87,57 +90,77 @@
             <!-- My Work -->
             <section class="my-projects" id="projects">
                 <h2 class="section__title" data-aos="fade-up">My Projects</h2>
-                <!-- <p class="section__subtitle">A selection of my range of work</p> -->
-                
-                <div class="portfolio">
-                    <!-- Portfolio item 01 -->
-                    <a href="https://devpost.com/software/musicjam" target="_blank" class="portfolio__item">
-                        <img src="img/MusicJam1.jpg" alt="" class="portfolio__img">
-                    </a>
-
-                    <!-- Portfolio item 02 -->
-                    <a href="https://devpost.com/software/piano-augmented" target="_blank" class="portfolio__item">
-                        <img src="img/Pianopic1.jpg" alt="" class="portfolio__img">
-                    </a>
-
-                    <!-- Portfolio item 03 -->
-                    <a href="https://github.com/jpolina/portfolio" target="_blank" class="portfolio__item">
-                        <img src="img/MyWebsite.png" alt="" class="portfolio__img">
-                    </a>
-
-                    <!-- Portfolio item 04 -->
-                    <a href="https://chrome.google.com/webstore/detail/lofidoro/pjgoihdbljhplcmojnnfokmacpoonnee?utm_source=chrome-ntp-icon" target="_blank" class="portfolio__item">
-                        <img src="img/pomodoro.png" alt="" class="portfolio__img">
-                    </a>
-
-                    <!-- Portfolio item 05 -->
-                    <a href="https://devpost.com/software/chordial-a-chord-generator" target="_blank" class="portfolio__item">
-                        <img src="img/chordial.png" alt="" class="portfolio__img">
-                    </a>
-                    
+                <div class="projects-wrapper">
+                    <div class="project1-wrapper">
+                        <img src="img/pomodoro.png" alt="lofidoro project" class="project1-img" target="_blank">
+                        <div class="project1-caption" data-aos="fade-up">
+                            <h3>Lofidoro Chrome Extension</h3>
+                            <div class="project1-desc">
+                                A Pomodoro technique timer in the form of a Google Chrome Extension. Published on the Chrome Web Store with 700+ weekly users in 80+ countries. Garnered a 4.5 star rating and the “Featured” certification on the Chrome Web store for following recommended
+                                practices.
+                            </div>
+                            <div class="project-stack">
+                                JavaScript, HTML/CSS, Bootstrap
+                            </div>
+                            <div class="project-stack-wrapper-right">
+                                <a href="https://github.com/jpolina/lofi-pomodoro-chrome-extension" class="project-link" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://chrome.google.com/webstore/detail/lofidoro/pjgoihdbljhplcmojnnfokmacpoonnee" class="project-link" target="_blank">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project2-wrapper">
+                        <div class="project2-caption" data-aos="fade-up">
+                            <h3>Online Marketplace</h3>
+                            <div class="project2-desc">
+                                A classified advertising web app built with the MERN stack. Browse and filter ads or sign up to post ads of your own.
+                            </div>
+                            <div class="project-stack project2-stack">
+                                MongoDB, Express.js, React.js, AWS S3, Redux, Node.js, Postman, Bootstrap
+                            </div>
+                            <div class="project-stack-wrapper-left">
+                                <a href="https://github.com/jpolina/marketplace-frontend" class="project-link" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://jpolina.github.io/marketplace-frontend/" class="project-link" target="_blank">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="img/MBP1.png" alt="marketplace project" class="project2-img1">
+                        <img src="img/iPhone.png" alt="marketplace project" class="project2-img2">
+                        
+                    </div>
+                    <div class="project3-wrapper">
+                        <img src="img/MBP2.png" alt="Chordial project" class="project3-img">
+                        <div class="project3-caption" data-aos="fade-up">
+                            <h3 class="project3-title">Chordial Project</h3>
+                            <div class="project3-desc">
+                                Chordial is a web app that generates and previews musical chord progressions to fit the melody that the user inputs into the piano roll.
+                            </div>
+                            <div class="project-stack">
+                                React.js, JavaScript, HTML/CSS, Tone.js, BootStrap
+                            </div>
+                            <div class="project-stack-wrapper-right">
+                                <a href="https://github.com/jpolina/chord-generator" class="project-link" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://jpolina.github.io/chord-generator/" class="project-link" target="_blank">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- <iframe id = "portfolio__video" title="3 On E";
-                src="https://youtube.com/embed/mgb8kQ-F93I">
-                </iframe>
 
-                <iframe id = "portfolio__video1" 
-                src="https://www.youtube.com/embed/JYo09BbLN7I" 
-                title="Misty"
-                allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-
-                <iframe id = "portfolio__video2"
-                src="https://www.youtube.com/embed/NcwYsxabrR0" 
-                title="YouTube video player" 
-                allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe> -->
             </section>
             
             
             <!-- Footer -->
-            <footer class = "footer">
+            <footer class = "footer" id="contact">
                 <a href="mailto:jonathanpolina4@gmail.com" class="footer__link">jonathanpolina4@gmail.com</a>
                 <ul class="social-list">
                     <li class="social-list__item"><a class="social-list__link" href="https://github.com/jpolina">

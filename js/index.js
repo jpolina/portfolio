@@ -47,3 +47,22 @@ for(let i of Array.apply(null, {length: 100}).map(Number.call, Number)) {
         .deleteAll(50)
         .start();
 }
+
+// adding links to images
+
+
+document.querySelector('.project1-img').onclick = () => {
+    window.open('https://chrome.google.com/webstore/detail/lofidoro/pjgoihdbljhplcmojnnfokmacpoonnee', '_blank').focus();
+}
+
+document.querySelector('.project2-img1').onclick = () => {
+    window.open('https://jpolina.github.io/marketplace-frontend/', '_blank').focus();
+}
+
+document.querySelector('.project2-img2').onclick = () => {
+    window.open('https://jpolina.github.io/marketplace-frontend/', '_blank').focus();
+}
+
+document.querySelector('.project3-img').onclick = () => {
+    window.open('https://jpolina.github.io/chord-generator/', '_blank').focus();
+}
