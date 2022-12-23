@@ -644,7 +644,7 @@ i:hover {
     }
 
     .project1-desc, .project2-desc, .project3-desc {
-        padding:0.7em;
+        padding:0.6em 1.5em;
         border-radius: 15px;
     }
 
@@ -678,25 +678,17 @@ i:hover {
     text-decoration: none;
 }
 
-.footer__link {
-    font-weight: var(--fw-bold);
-}
-
-.footer__link:hover,
 .social-list__link:hover{
     opacity:.7;
-}
-
-.footer__link:hover {
-    text-decoration: underline;
 }
 
 .social-list {
     list-style: none;
     display:flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 0;
     padding: 0;
+    gap:20px;
 }
 
 .social-list__items {
@@ -721,3 +713,36 @@ i:hover {
     margin-right: auto;
 }
 
+svg {
+    fill: var(--clr-accent);
+    height:22px;
+    transform: translateY(2px);
+    transition: transform 200ms ease-in-out;
+    cursor: pointer;
+}
+
+svg:hover {
+    transform: translateY(2px) scale(1.2);
+}
+
+@media (max-width:800px) {
+    svg {
+        height:18px;
+        transform: translateY(2px);
+        transition: transform 200ms ease-in-out;
+        cursor: pointer;
+    }
+    
+    svg:hover {
+        transform: translateY(2px) scale(1.2);
+    }
+}
+
+.line {
+    width: 100%;
+    color: var(--clr-accent);
+    /* margin: 1em; */
+    transform: translateY(4px);
+
+    border-radius: 10px;
+}
