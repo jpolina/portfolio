@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
-
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
@@ -108,11 +106,6 @@ img {
 }
 
 strong { font-weight: var(--fw-bold) }
-
-:focus {
-    /* outline: 3px solid var(--clr-accent); */
-    /* outline-offset: 3px; */
-}
 
 /* Buttons */
 
@@ -311,8 +304,6 @@ header {
 }
 
 #home {
-    /* background-image: url("../img/hawaiiSunrise.jpg"); */
-    /* background-size:auto; */
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -321,19 +312,6 @@ header {
     opacity: 1;
     overflow: hidden;
     margin-bottom:0px;
-}
-
-@media (min-width: 600px) {
-/* 
-    .section__subtitle--intro {
-        align-self: center;
-        grid-column: -1/1;
-        grid-row: 2;
-        text-align: center;
-        position: relative;
-        left: -1.5em;
-        width: calc(100% + 1.5em);
-    } */
 }
 
 .chevron {
@@ -370,7 +348,6 @@ header {
     background-image: url(../img/Piano.jpg);
     background-size: cover;
     background-repeat: none;
-    /* background-position:center; */
     color: var(--clr-light);
     text-align: center;
     background-position: center;
@@ -422,13 +399,21 @@ header {
     text-align: center;
 }
 
+.project-desc {
+    background-color: var(--clr-accent);
+    border-radius: 5px;
+    padding:15px 20px;
+    margin: 10px 0 5px 0;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .project-stack {
     color: var(--clr-accent);
 }
 
 .project-link {
     color: var(--clr-accent);
-    /* margin-left:10px; */
 }
 
 .project-stack-wrapper-left {
@@ -500,15 +485,6 @@ i:hover {
     margin-top:50px;
 }
 
-.project1-desc {
-    background-color: var(--clr-accent);
-    border-radius: 5px;
-    padding:15px 20px;
-    margin: 10px 0;
-
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
 .project2-wrapper {
     display:flex;
     flex-direction: row;
@@ -518,7 +494,6 @@ i:hover {
 }
 
 .project2-img1 {
-    flex-grow:0.5;
     max-width:40%;
     flex-basis:auto;
     transform: translateX(4%) scale(1.6);
@@ -534,7 +509,6 @@ i:hover {
 }
 
 .project2-img2 {
-    flex-grow:1;
     max-width:10%;
     flex-basis:auto;
     transform: translateX(4%);
@@ -550,20 +524,10 @@ i:hover {
 
 
 .project2-caption {
-    /* flex-grow:2; */
     text-align: left;
     max-width: 100%;
     transform: translateX(-4%);
     z-index:1;
-}
-
-.project2-desc {
-    background-color: var(--clr-accent);
-    border-radius: 5px;
-    padding:15px 20px;
-    margin: 10px 0;
-
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .project2-stack {
@@ -580,13 +544,11 @@ i:hover {
 }
 
 .project3-title {
-    /* max-width:70%; */
     align-items: right;
     margin-right:0;
 }
 
 .project3-img {
-    flex-grow:1;
     max-width:50%;
     flex-basis:auto;
     transform: translateX(4%) scale(1.3);
@@ -609,15 +571,9 @@ i:hover {
     z-index:1;
 }
 
-.project3-desc {
-    background-color: var(--clr-accent);
-    border-radius: 5px;
-    padding:15px 20px;
-    margin: 10px 0;
-
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.project3-stack {
+    margin-left:20px;
 }
-
 @media (max-width: 800px) {
     .project1-img, .project2-img1,.project2-img2, .project3-img{
         display: none;
@@ -643,7 +599,7 @@ i:hover {
         margin-left: 20%;
     }
 
-    .project1-desc, .project2-desc, .project3-desc {
+    .project-desc{
         padding:0.6em 1.5em;
         border-radius: 15px;
     }
@@ -654,11 +610,15 @@ i:hover {
 
     .project2-stack {
         margin-right: 0;
-        transform: translateX(11%);
+        width:100%;
     }
 
     .project-stack-wrapper-left {
         justify-content: right;
+    }
+
+    .project3-stack {
+        margin-left:0;
     }
 }
 
@@ -695,8 +655,13 @@ i:hover {
     margin: 0 .5em;
 }
 
+.social-list__item {
+    width:30px;
+}
+
 .social-list__link {
-    padding: .5em
+    padding: .5em;
+    width:30px;
 }
 
 /* Individual portfolio item styles */
@@ -712,6 +677,7 @@ i:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 svg {
     fill: var(--clr-accent);
@@ -741,8 +707,10 @@ svg:hover {
 .line {
     width: 100%;
     color: var(--clr-accent);
-    /* margin: 1em; */
     transform: translateY(4px);
-
     border-radius: 10px;
+}
+
+#linkedin {
+    width:90px
 }
