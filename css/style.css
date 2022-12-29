@@ -648,7 +648,7 @@ i:hover {
     justify-content: center;
     margin: 0;
     padding: 0;
-    gap:20px;
+    gap:25px;
 }
 
 .social-list__items {
@@ -702,15 +702,4 @@ svg:hover {
     svg:hover {
         transform: translateY(2px) scale(1.2);
     }
-}
-
-.line {
-    width: 100%;
-    color: var(--clr-accent);
-    transform: translateY(4px);
-    border-radius: 10px;
-}
-
-#linkedin {
-    width:90px
 }
