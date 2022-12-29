@@ -345,7 +345,7 @@ header {
 
 .about-me {
     background-color: var(--clr-dark);
-    background-image: url(../img/Piano.jpg);
+    background-image: url(../img/Piano_compressed.webp);
     background-size: cover;
     background-repeat: none;
     color: var(--clr-light);
