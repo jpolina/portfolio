@@ -451,6 +451,21 @@ i:hover {
     gap:20px;
 }
 
+.project0-img {
+    max-width:40%;
+    flex-basis:auto;
+    transform: translateX(-4%) scale(1.5);
+    border-radius: 0.65vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+.project0-img:hover {
+    transform: translateX(-4%) scale(1.6);
+}
+
 .project1-wrapper {
     display:flex;
     flex-direction: row;
@@ -575,7 +590,7 @@ i:hover {
     margin-left:20px;
 }
 @media (max-width: 800px) {
-    .project1-img, .project2-img1,.project2-img2, .project3-img{
+    .project0-img, .project1-img, .project2-img1,.project2-img2, .project3-img{
         display: none;
     }
     .project1-caption, .project2-caption, .project3-caption {
@@ -583,20 +598,20 @@ i:hover {
         transform: translateX(0);
     }
     .project1-caption, .project3-caption, .project-stack-wrapper-right{
-        text-align: left;
-        justify-content: left;
+        text-align: right;
+        justify-content: right;
     }
 
     .project2-caption {
-        text-align:right;
+        text-align:left;
     }
 
     .project1-caption,.project3-caption {
-        margin-right: 20%;
+        margin-left: 20%;
     }
 
     .project2-caption {
-        margin-left: 20%;
+        margin-right: 20%;
     }
 
     .project-desc{
@@ -614,7 +629,7 @@ i:hover {
     }
 
     .project-stack-wrapper-left {
-        justify-content: right;
+        justify-content: left;
     }
 
     .project3-stack {

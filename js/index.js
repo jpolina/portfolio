@@ -50,6 +50,9 @@ for(let i of Array.apply(null, {length: 100}).map(Number.call, Number)) {
 
 // adding links to images
 
+document.querySelector('.project0-img').onclick = () => {
+    window.open('https://muvision.netlify.app/', '_blank').focus();
+}
 
 document.querySelector('.project1-img').onclick = () => {
     window.open('https://chrome.google.com/webstore/detail/lofidoro/pjgoihdbljhplcmojnnfokmacpoonnee', '_blank').focus();
