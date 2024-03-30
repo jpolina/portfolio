@@ -148,17 +148,24 @@ h3 { font-size: var(--fs-h3) }
 .section__title--intro {
     font-weight: var(--fw-reg);
     text-align: center;
-    margin-top: 25vh;
+    margin-top: calc(30vh - 30px)
 }
 
 .section__title--intro strong {
     display: inline;
 }
 
-@media (max-height: 750px) {
+@media (max-height: 700px) {
 
     .section__title--intro {
-        margin-top: 35%;
+        margin-top: calc(20vh - 30px);
+    }
+}
+
+@media (max-height: 400px) {
+
+    .section__title--intro {
+        margin-top: 0vh;
     }
 }
 
@@ -480,7 +487,7 @@ i:hover {
     max-width:40%;
     flex-basis:auto;
     transform: translateX(4%);
-    border-radius: 0.65vw;
+    border-radius: 2%;
     transition: transform 200ms ease-in-out;
     cursor:pointer;
 
