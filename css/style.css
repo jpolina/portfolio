@@ -575,7 +575,7 @@ i:hover {
 .project2-img2 {
     max-width:20%;
     flex-basis:auto;
-    transform: translateX(-10%);
+    transform: translateX(-15%) scale(0.9);
     border-radius: 0.65vw;
     z-index:1;
     cursor: pointer;
@@ -583,7 +583,7 @@ i:hover {
 }
 
 .project2-img2:hover {
-    transform: translateX(-10%) scale(1.1);
+    transform: translateX(-15%) scale(1);
 }
 
 
