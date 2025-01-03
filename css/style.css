@@ -401,6 +401,7 @@ header {
     background-color: #252422;
     color: var(--clr-light);
     text-align: center;
+    padding-bottom: 2em;
 }
 
 .project-desc {
@@ -455,6 +456,40 @@ i:hover {
     gap:20px;
 }
 
+
+.project5-wrapper {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    max-width:1100px;
+}
+
+.project5-img {
+    flex-grow:2;
+    max-width:30%;
+    flex-basis:auto;
+    transform: translateX(-4%);
+    border-radius: 2%;
+    transition: transform 200ms ease-in-out;
+    cursor:pointer;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project5-img:hover {
+    transform: translateX(-4%) scale(1.05)
+}
+
+.project5-caption {
+    flex-grow:2;
+    text-align: left;
+    max-width: 100%;
+    transform: translateX(4%);
+    z-index:1;
+    margin-top:50px;
+}
+
 .project4-img {
     max-width:35%;
     flex-basis:auto;
@@ -483,7 +518,7 @@ i:hover {
     flex-grow:1;
     max-width:40%;
     flex-basis:auto;
-    transform: translateX(4%);
+    transform: translateX(-4%);
     border-radius: 2%;
     transition: transform 200ms ease-in-out;
     cursor:pointer;
@@ -492,12 +527,12 @@ i:hover {
 }
 
 .project3-img:hover {
-    transform: translateX(4%) scale(1.05)
+    transform: translateX(-4%) scale(1.05)
 }
 
 .project3-caption {
     flex-grow:2;
-    text-align: right;
+    text-align: left;
     max-width: 100%;
     transform: translateX(-4%);
     z-index:1;
@@ -515,7 +550,7 @@ i:hover {
 .project2-img1 {
     max-width:40%;
     flex-basis:auto;
-    transform: translateX(4%) scale(1.6);
+    transform: translateX(-4%) scale(1.6);
     border-radius: 0.65vw;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -524,13 +559,13 @@ i:hover {
 }
 
 .project2-img1:hover {
-    transform: translateX(4%) scale(1.7);
+    transform: translateX(-4%) scale(1.7);
 }
 
 .project2-img2 {
     max-width:10%;
     flex-basis:auto;
-    transform: translateX(4%);
+    transform: translateX(-4%);
     border-radius: 0.65vw;
     z-index:1;
     cursor: pointer;
@@ -538,19 +573,19 @@ i:hover {
 }
 
 .project2-img2:hover {
-    transform: translateX(4%) scale(1.1);
+    transform: translateX(-4%) scale(1.1);
 }
 
 
 .project2-caption {
-    text-align: left;
+    text-align: right;
     max-width: 100%;
     transform: translateX(-4%);
     z-index:1;
 }
 
 .project2-stack {
-    width:90%;
+    margin-left:20px;
 }
 
 .project1-wrapper {
@@ -559,18 +594,18 @@ i:hover {
     align-items: center;
     justify-content:center;
     max-width:1100px;
-    text-align: right;
+    text-align: left;
 }
 
 .project1-title {
-    align-items: right;
+    align-items: left;
     margin-right:0;
 }
 
 .project1-img {
     max-width:50%;
     flex-basis:auto;
-    transform: translateX(4%) scale(1.3);
+    transform: translateX(-4%) scale(1.3);
     margin-top: 50px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -578,44 +613,38 @@ i:hover {
 }
 
 .project1-img:hover {
-    transform: translateX(4%) scale(1.4);
+    transform: translateX(-4%) scale(1.4);
 }
 
 .project1-caption {
     flex-grow:2;
     flex-basis: 2;
-    text-align: right;
+    text-align: left;
     max-width: 100%;
     transform: translateX(-4%);
     z-index:1;
 }
 
-.project1-stack {
-    margin-left:20px;
-}
 @media (max-width: 800px) {
-    .project4-img, .project3-img, .project2-img1,.project2-img2, .project1-img{
+    .project5-img, .project4-img, .project3-img, .project2-img1,.project2-img2, .project1-img{
         display: none;
     }
     .project3-caption, .project2-caption, .project1-caption {
         width: 100%;
         transform: translateX(0);
     }
-    .project3-caption, .project1-caption, .project-stack-wrapper-right{
+    .project5-caption, .project3-caption, .project1-caption, .project-stack-wrapper-right{
         text-align: right;
         justify-content: right;
+        margin-right:20%
     }
 
-    .project2-caption {
+    .project1-caption, .project3-caption, .project5-caption {
         text-align:left;
     }
 
-    .project3-caption,.project1-caption {
-        margin-left: 20%;
-    }
-
     .project2-caption {
-        margin-right: 20%;
+        margin-left: 20%;
     }
 
     .project-desc{
@@ -623,21 +652,17 @@ i:hover {
         border-radius: 15px;
     }
 
-    .project3-caption {
-        margin-top: 20px;
-    }
-
-    .project2-stack {
-        margin-right: 0;
-        width:100%;
-    }
-
     .project-stack-wrapper-left {
         justify-content: left;
     }
 
-    .project1-stack {
-        margin-left:0;
+    .project-stack-wrapper-right {
+        margin-right:0;
+    }
+
+    .project1-caption, .project2-caption, .project3-caption, .project4-caption, .project5-caption {
+        margin-top: 0;
+        margin-bottom:0;
     }
 }
 
