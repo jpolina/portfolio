@@ -381,7 +381,7 @@ header {
     margin: 0 auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
     .abouts {
         display: flex;
         max-width: 1400px;
@@ -570,6 +570,7 @@ i:hover {
 
 .project2-img1:hover {
     transform: translateX(-4%) scale(1.7);
+    cursor: default;
 }
 
 .project2-img2 {
@@ -584,6 +585,7 @@ i:hover {
 
 .project2-img2:hover {
     transform: translateX(-15%) scale(1);
+    cursor: default;
 }
 
 
